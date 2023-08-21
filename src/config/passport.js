@@ -77,7 +77,7 @@ const initializePassport = () => {
         clientID: env.CLIENT_ID,
         clientSecret: env.CLIENT_SECRET,
         scope: ["user:email"],
-        callbackURL: "/auth/github/callback",
+        callbackURL: "https://mi-tienda-lkfv.up.railway.app/auth/github/callback",
       },
       async (accessToken, refreshToken, profile, done) => {
         const email = profile.emails[0].value;
