@@ -1,5 +1,5 @@
 let currentUser;
-const socket = io('https://mi-tienda-lkfv.up.railway.app:5000');
+const socket = io();
 
 socket.emit("newUser", {});
 
